@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Meals from "./components/Meals/Meals";
 import Orders from "./components/Orders/Orders";
 import "./App.css";
+import Header from "./components/Header/Header";
 
 function App() {
     const [meals, setMeals] = useState([]);
@@ -34,16 +35,19 @@ function App() {
     };
     return (
         <div className="App">
-            <h1>The Meal DB</h1>
-            <div className="main-content">
-                <Meals
-                    meals={meals}
-                    handleAddToOrder={handleAddToOrder}
-                ></Meals>
-                <div className="order-container">
-                    <Orders quantity={quantity} orders={orders}></Orders>
+            <Header></Header>
+            <main>
+                <h1>The Meal DB</h1>
+                <div className="main-content">
+                    <Meals
+                        meals={meals}
+                        handleAddToOrder={handleAddToOrder}
+                    ></Meals>
+                    <div className="order-container">
+                        <Orders quantity={quantity} orders={orders}></Orders>
+                    </div>
                 </div>
-            </div>
+            </main>
         </div>
     );
 }
