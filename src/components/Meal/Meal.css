@@ -1,0 +1,16 @@
+.meal {
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    margin: 10px 0; 
+    padding: 20px;
+}
+
+.meal .thumb {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.meal button span {
+    margin-left: 5px;
+}

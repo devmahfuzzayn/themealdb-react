@@ -1,0 +1,13 @@
+.orders {
+    position: sticky;
+    top: 40px;
+    width: 300px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.orders h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
