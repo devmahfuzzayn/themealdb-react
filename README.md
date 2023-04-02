@@ -1,2 +1,2 @@
-# The Meal DB - React
+# TheMealDB - React
 Live site: https://themealdb-react-mahfuzzayn.netlify.app/
